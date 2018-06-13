@@ -2269,14 +2269,12 @@
 		seta_1: seta_1 {
 			mux {
 				pins = "gpio27";
-		/*		function = "gpio";   */
-				function = "uim_i2c";
+				function = "gpio";  
 			};
 
 			config {
 				pins = "gpio27";
-	/*			function = "qdss_tracectl_a"; */
-				function = "uim_i2c";
+				function = "qdss_tracectl_a"; 
 				drive-strength = <16>;
 				bias-disable;
 			};
@@ -2285,8 +2283,7 @@
 		seta_2: seta_2 {
 			mux {
 				pins = "gpio28";
-		/*		function = "qdss_tracectl_a"; */
-				function = "uim_i2c";
+				function = "qdss_tracectl_a"; 
 			};
 
 			config {
