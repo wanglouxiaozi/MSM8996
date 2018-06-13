@@ -90,7 +90,7 @@
 		clocks = <&clock_mmss clk_mclk0_clk_src>,
 				<&clock_mmss clk_camss_mclk0_clk>;
 		clock-names = "cam_src_clk", "cam_clk";
-		qcom,clock-rates = <19200000 0>;
+		qcom,clock-rates = <48000000 0>;
 	};
 
 	eeprom1: qcom,eeprom@1 {
@@ -123,7 +123,7 @@
 		clocks = <&clock_mmss clk_mclk2_clk_src>,
 			<&clock_mmss clk_camss_mclk2_clk>;
 		clock-names = "cam_src_clk", "cam_clk";
-		qcom,clock-rates = <19200000 0>;
+		qcom,clock-rates = <48000000 0>;
 	};
 
 	qcom,camera@0 {
@@ -167,7 +167,7 @@
 		clocks = <&clock_mmss clk_mclk0_clk_src>,
 				<&clock_mmss clk_camss_mclk0_clk>;
 		clock-names = "cam_src_clk", "cam_clk";
-		qcom,clock-rates = <48000000 0>;
+		qcom,clock-rates = <48000000 0>; /*original clock-rates = <24000000 0> */
 	};
 
 	qcom,camera@1 {
@@ -210,7 +210,8 @@
 		clocks = <&clock_mmss clk_mclk1_clk_src>,
 			<&clock_mmss clk_camss_mclk1_clk>;
 		clock-names = "cam_src_clk", "cam_clk";
-		qcom,clock-rates = <48000000 0>;
+		qcom,clock-rates = <48000000 0>; /*original clock-rates = <24000000 0> */
+
 	};
 
 	qcom,camera@2 {
